@@ -1,0 +1,182 @@
+<?php
+session_start();
+?>
+
+<! doctype html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Web build activity.Feedback</title>
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"> <!-- website with emoticons used in survey-->
+<style>
+
+	html,body {
+		width:100%;
+		height:100%;
+		background-color:rgb(74,90,128);
+		position:absolute;
+		margin:0;
+	}
+	*{
+		box-sizing:border-box;
+	}
+	#div1{
+		width:100%;
+		height:auto;
+		margin-left:10%;
+		
+	}
+	#div2{
+		width:100%;
+		height:auto;
+		float:left;
+		left:50%;
+		margin-left:8%;
+		margin-top:2%;
+	}
+	.div3{
+		display:flex;
+		flex-wrap:wrap;
+		flex-direction:row;
+		width:100%;
+		height:10%;
+		background-color:rgb(74,90,128);
+		justify-content:space-between;
+		
+	}
+	.div3 > div{
+		width:20%;
+		height:100%;
+		margin:2%;
+		background-color:black;
+		color:white;
+		text-align:center;
+		border-radius:5px;
+		
+	}
+	#div4{
+		width:100%;
+		height:10%;
+		float:left;
+	}
+	#div5{
+		width:100%;
+		height:100%;
+		display:flex;
+		justify-content:center;
+		
+	}
+	#p1 {
+		font-family:Verdana;
+		color: rgb(220,220,220);
+		line-height:1.8;
+		font-size:25px;
+		margin: 15px;
+		word-spacing:5px;
+		text-align:left;
+	}
+	#p2 {
+		font-family:Verdana;
+		color: rgb(220,220,220);
+		text-align: center;
+		line-height:1.8;
+		font-size:25px;
+		margin: 5px;
+		word-spacing:5px;
+		align-items:flex-end;
+	}
+	.em, .em-svg{
+		width:100%;
+		height:100%;
+	}
+	.btn1 {
+		width: 100%;
+		height:100%;
+		/*padding: 5px;*/
+		background-color:rgb(74,90,128);
+		border:none;
+		color:rgb(240,200,100);
+		text-align:center;
+		font-family: Verdana;
+		font-size: 15px;
+		font-weight:bold;
+		opacity: 0.7;
+		transition: 0.3s;
+		border-radius:5px;
+		cursor:pointer;
+	}
+	.btn1:hover {opacity: 1}
+	
+	.btn2 {
+		width: 100%;
+		height:100%;
+		padding: 20px;
+		background-color:#54baa1;
+		border:none;
+		color:rgb(240,200,100);
+		text-align:center;
+		font-family: Verdana;
+		font-size: 15px;
+		font-weight:bold;
+		opacity: 0.7;
+		transition: 0.3s;
+		border-radius:5px;
+	}
+	.btn2:hover {opacity: 1}
+	
+	@media only screen and (max-width:600px){
+		#p1{
+			font-size:20px;
+		}
+		#p2 { 
+			font-size:20px;
+		}
+	}
+</style>
+</head>
+<body>
+<div id="div1">
+<p id="p1">
+Great answer <?php echo $_SESSION['username'];?>!</br>
+We are happy that you have learnt something new,</br>how to change elements of your first web site...
+</p>
+</div>
+<div id="div2">
+<p id="p2">
+We value your feedback.</br>
+did you enjoy this activity?</br>
+Please click a picture below which shows your opinion. </br></br>
+</p>
+</div>
+<div class="div3">
+<div><button class="btn1"><i class="em em-frowning"></i></button></div>			<!-- emoticons from website added in head section-->
+<div><button class="btn1"><i class="em em-expressionless"></i></button></div>
+<div><button class="btn1"><i class="em em-grin"></i></button></div>
+<div><button class="btn1"><i class="em em-grinning_face_with_star_eyes"></i></button></div>
+</div>
+<div id="div2">
+<p id="p1">Thank you . Merci beaucoup. Dziekujemy . Grazie.</p>
+</div>
+<div id="div4">
+<div id="div5">
+<form method = "post">
+<input type="button" name="logout" class="btn2" value="Logout">
+
+</form>
+</div>
+</div>
+<?php 
+	// after press button logout is clicked
+	// reset session array/variables $_SESSION=[];
+	// remove all session variables session_unset();
+	//destroy session session_destroy();
+	//and send user to logout confiramtion website (Header:)
+
+?>
+
+
+
+
+
+</body>
+</html>

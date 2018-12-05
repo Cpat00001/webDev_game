@@ -1,0 +1,199 @@
+<! doctype html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Web build activity.Mario</title>
+<style>
+
+	html,body {
+		width:100%;
+		height:100%;
+		margin:0;
+		background-color:rgb(74,90,128);
+		position:relative;
+	}
+	*{
+		box-sizing:border-box;
+	}
+	.div0 {
+		position: absolute;
+	}
+	.div1 {
+		width:20%;
+		height:60%;
+		top:20%;
+		right:1%;
+		float:right;
+		background-color:powderblue;
+		position:relative;
+	
+	}
+	.div2 {
+		width:80%;
+		height:20%;
+		float:left;
+		background-color:#4f6a7d;
+		border-radius:30px;
+		margin:5px;
+		position:relative;
+		top:5%;
+		right:1%;
+	}
+	.div3 {
+		width:50%;
+		height:30px;
+		background-color:powderblue;
+		margin:auto;
+		border-radius:5px;
+	}
+	.btn1 {
+		width: 100%;
+		height:100%;
+		padding: 5px;
+		background-color:#54baa1;
+		border:none;
+		color:rgb(240,200,100);
+		text-align:center;
+		font-family: Verdana;
+		font-size: 2.5vw;
+		font-weight:bold;
+		opacity: 0.7;
+		transition: 0.3s;
+		border-radius:5px;
+    }
+
+  .btn1:hover {opacity: 1}
+
+	.p1 {
+		font-family:Verdana;
+		color: rgb(220,220,220);
+		text-align: left;
+		line-height:1.5;
+		font-size:12px;
+		margin: 5px;
+		/*word-spacing:5px;*/
+	}
+	.div5{
+		width:40%;
+		height:auto;
+		float:right;
+		background-color:rgb(74,90,128);
+		color:rgb(220,220,220);
+		/*border-radius:30px;*/
+		margin:5px;
+		position:relative;
+		top:5%;
+		right:1%;
+	}
+	input[type=text]{
+		background-color:rgb(74,90,128);
+		border:1px solid grey;
+		
+	}
+	@media only screen and (max-width:720px){
+	.div1 { 
+			width:30%;
+			height:60%;
+			float:right;
+	}
+	.div2 {
+		width:30%;
+		height:auto;
+		float:right;
+	}
+	img {
+		width:100%;
+	}
+	.p1 {
+		font-size:15px;
+	}
+	.div5{
+		width:29%;
+	}
+	}
+	@media only screen and (max-width:1250px) and (min-width:720px){
+	.div1 { 
+			width:30%;
+			height:60%;
+			float:right;
+	}
+	.div2 {
+		width:30%;
+		height:auto;
+		float:right;
+	}
+	img {
+		width:100%;
+	}
+	.p1{
+		font-size:2vw;
+	}
+	.div5{
+		width:30%;
+		height:auto;
+		
+	}
+	.btn1 {
+		font-size: 1.3vw;
+	}
+	}
+	@media only screen and (min-width:1250px){
+	.div1 { 
+			width:20%;
+			height:60%;
+			float:right;
+	}
+	.div2 {
+		width:40%;
+		height:auto;
+		float:right;
+	}
+	img {
+		width:100%;
+	}
+	.div5{
+		width:30%;
+		font-size:15px;
+	}
+	.btn1 {
+		font-size: 1.2vw;
+	}
+	.p1{
+		font-size:23px;
+	}
+	}
+</style>
+</head>
+<body>
+<div class="div1"><img src="img/CHMario1.png" alt="Mario web builder" style="width:100%; height:100%"></div>
+<div class="div2">
+<p class="p1"> My friend please read carefully what I’m telling you.
+First check a text displayed next to.Yes, this is a code of your first website. Don’t worry it’s easy - like eat a piece of pizza.
+My friend, find in a text line <code> h1 color:</code> and after colon type in you favourite color e.g. white, yellow , red etc.
+After this, one line below type in text you want to display 
+ before /h1
+.After all press a button, “Magic”
+</p>	
+</div>
+<div class="div5">
+<p>
+&lt;html&gt;</br>
+&lt; doctype html! &gt; </br>
+&lt;head &gt;</br>
+&lt;style &gt;</br>
+</p>
+<form action="webbuild7.php" method="get">
+h1 color :<input type="text" name="color" size="5"></br>
+<input type="text" name="sentence" size="7">   /h1</br>
+<p>
+&lt;/style&gt;</br>
+&lt;/head &gt;</br>
+&lt;h3  &lt;/h3 </br>
+&lt;/body &gt;</br>
+&lt;/html &gt;</br>
+</p>	
+<div class="div3"><button class="btn1"> MAGIC </button></div>
+</form>
+</div>
+</body>
+</html>

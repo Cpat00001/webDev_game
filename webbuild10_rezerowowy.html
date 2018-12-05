@@ -1,0 +1,90 @@
+<! doctype html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Web build activity.Tintin</title>
+<style>
+html,body {
+		width:100%;
+		height:100%;
+		background-color:rgb(74,90,128);
+		position:relative;
+		margin:0;
+	}
+	*{
+		box-sizing:border-box;
+		}
+	#flex-container{
+		display:flex;
+		justify-content:center;
+		align-items:stretch;
+		flex-wrap:wrap;
+		height:30%;
+		background-color:rgb(74,90,128);
+		flex-direction:row;	
+	}
+	#flex-container > div{
+		font-size:15px;
+		margin:10px;
+		background-color:rgb(50,90,128);
+		height:auto;
+		width:50%;
+		text-align:center;
+	}
+	img{
+		max-widht:100%;
+		/*height:auto;*/
+	}
+	.btn1{
+		float:left;
+		width:100%;
+		height:auto;
+		background-color:#54baa1;
+		cursor:pointer;
+		text-align:center;
+		font-family: Verdana;
+		font-size: 18px;
+		font-weight:bold;
+		opacity: 0.7;
+		transition: 0.3s;
+		border-radius:5px;
+	}
+	.btn1:hover{opacity: 1}
+	a{
+		text-decoration:none;
+	}
+	
+	@media only screen and (max-width:540px){
+	#flex-container{
+		widht:100%;
+	}
+	#flex-container > div{
+		width:100%;
+	}
+	.btn1{
+		width:100%;
+		height:auto;
+	}
+	img{
+		clear:both;
+	}
+	
+	
+	
+</style>
+</head>
+<body>
+<div id="flex-container">
+<div style="flex-grow:1"><h2>Here is an original photo</h2></div>
+<div style="flex-growth:3"><img src="woody1.jpg" alt="Woody" width= "200" height="200"></img></div>
+<!--div id="flex-container">-->
+<div style="flex-growth:1"><h2> here is your resized photo</h2></div>
+<div style="flex-growth:2"><img src="woody1.jpg" alt="woody" width="300" height="400"></img></div>
+
+<!--<div id="flex-container">-->
+<div><button class="btn1"><a href="webbuild9.html">Try again</a></button> </div>
+<div><button class="btn1"><a href = webbuild11.html">Lovely take me further</a></button></div>
+</div>
+
+</body>
+</html>

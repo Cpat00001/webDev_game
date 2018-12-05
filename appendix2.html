@@ -1,0 +1,194 @@
+<!--Stage 1 :  REGISTRATION FORM/WELCOME WEBPAGE-->
+ <!doctype html>
+ <html lang="en">
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Welcome Page / Registration Form</title> <!-- page title-->
+ <!-- this line makes website responsive -looks good on every diveces -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta lang="eng"> <!-- page in english language-->
+ <meta charset="UTF-8"> <!-- read ANSI characters-->
+ <!-- all css export into separate css file-->
+ <style> 
+ body {
+ background-color:rgb(74,90,128);
+ font-family:verdana; 
+ }
+ .div1 {
+ margin: 10px;
+ }
+ .div2 {
+		border-style :solid;
+		border-width:1px;
+		border-color:rgb(8,	70,168);
+		border-radius: 5px;
+		color:rgbrgb(8,59,140);
+        width: 400px;
+		padding:12px 20px;		
+		background-color: rgb(100,50,221);
+		color:rgb(239,200,10);
+		margin: 10px 10px 10px;
+		font-family:verdana;
+		}
+ h2,h3,h4 {
+		color:rgb(239,200,10);
+		font-family:verdana;
+		text-align:left;
+		
+		}
+ input[type=text] {
+		padding: 5px 5px;
+		margin 5px 0;
+		width: 90%;
+		font-family:verdana;
+	}
+ .div3{ 
+		position: relative; 
+		left: 500px;
+		top: -620px;
+		border-style :solid;
+		border-width:1px;
+		border-color:rgb(8,	70,168);
+		border-radius: 5px;
+		color:rgbrgb(8,59,140);
+        width: 700px;
+		height: 580px;
+		padding:12px 20px;		
+		background-color: rgb(100,50,221);
+		color:rgb(239,200,10);
+		margin: 10px 10px 10px;
+		font-family:verdana;
+		text-align:center;
+ 
+ }	
+ .div4 {
+		border-style :solid;
+		border-width:1px;
+		border-color:rgb(8,	70,168);
+		border-radius: 5px;
+		color:rgbrgb(8,59,140);
+        width: 400px;
+		padding:12px 20px;		
+		background-color: rgb(100,50,221);
+		color:rgb(239,200,10);
+		margin: 10px 10px 10px;
+		font-family:verdana;
+ }
+ .div5 {
+		width:70%;
+		height:100px;
+		background-color:rgb(74,90,128);
+		display:inline-block;
+ 
+ 
+ }
+ .div6 {
+		width:100%;
+		background-color:rgb(74,90,158);
+		float:left;
+		
+ }
+ .div7 {
+		width:30%;
+		height:50px;
+		background-color:rgb(74,90,128) ;
+		color: rgb(239,200,10);
+		display:inline-block;
+		float:right;
+		position:absolute;
+		right:100px;
+		top:45px;
+		font-family: Verdana;
+		text-align:left;
+ }
+ .div8 {
+		width: 100%
+		height:10px;
+		margin: 5px;
+ }
+  .btn1 {
+		padding: 5px;
+		background-color:#54baa1;
+		border:none;
+		color:white;
+		text-align:center;
+		font-family: Verdana;
+		font-size: 16px;
+		margin: 2px 2px;
+		opacity: 0.7;
+		transition: 0.3s;
+		border-radius:5px;
+ }
+
+  .btn1:hover {opacity: 1}
+
+  .btn2 {
+		padding: 5px;
+		background-color:#54baa1;
+		border:none;
+		color:white;
+		text-align:center;
+		font-family: Verdana;
+		font-size: 16px;
+		margin: 2px 2px;
+		opacity: 0.7;
+		transition: 0.3s;
+		border-radius:5px;
+ }
+ .btn2:hover{opacity:1} 
+ 
+ a{
+	text-decoration: none;
+	color:yellow;
+ }
+			
+ </style>
+ </head>
+ <body>
+ <header>
+ <div class="div5">
+ <h1 style="color:rgb(239,200,10);"> Welcome to University of Wolverhampton.</h1>
+ </div>
+<div class="div7">Knowledge. Innovation. Enterprise</div>
+ </div>
+ </header>
+ <br><br>
+ 
+ <div class="div4"><!-- log in form for someone who is already registered-->
+ <h4 style="color:rgba(239,200,10);"> If registered, just log in</h4>
+ <form method="post" action="appendix3.html">
+ <div class="div8">
+ Your email :    <br><input type="email" name="email" maxlength="50" autofocus="autofocus" size="55"><br><br>
+ Your password : <br><input type="password" name="pswd" size="55"><br><br>
+ </div>
+ Log in : <button class="btn1"><a href="appendix3.html">Login</a></button>
+ </form>
+ </div>
+
+ <!-- registration form we can add some input field if required-->
+ <div class="div2">
+ <h4> If not registered, please Sign in.	</h4>
+ <form method ='post' action ='appendix3.html'> <!--this form gathers attendee's input-->
+  <div class="div8">
+  Your First Name :<input type="text" name= "name" autofocus='autofocus' size="55"><br><br>
+  Your Surname :   <input type = "text" name="surname" size="55"><br><br>
+  Your email :     <input type ="email" name="email" maxlength="50" size="56"><br><br>
+  </div>
+  <!--Your IDNumber: <input type="text" name="IDnumber" placeholder="<?php echo $IDnum;?>><br><br> 
+  //you can use aswell css tooltip to display prompt, if attendee already have IDnum from email-->
+  Register : <button class="btn2"><a href="appendix3.html">Register</a></button>
+  </form>
+</div>
+<div class="div3">
+<a href="https://www.wlv.ac.uk/"><!-- link to main www university of wlv-->
+ <img src=" https://upload.wikimedia.org/wikipedia/en/1/13/University_of_Wolverhampton.jpg" alt="WolverhamptonUniversity" style="width:100%;height:100%;">
+</a> 
+</div>
+<footer>
+ <div class="div6"> 
+Group project 2018. Group 3
+
+</div>
+</footer>
+</body>
+</html>
